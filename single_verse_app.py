@@ -92,12 +92,8 @@ def run_singleverse():
                     daily_passage = df.iloc[daily_index]
 
                     mytext = daily_passage["text"]
+                    reference = "{} {}:{}".format(daily_passage["book"].split("(")[0].strip(), int(daily_passage["chapter"]), int(daily_passage["verse"]))
 
-                    reference = "{} {}:{}".format(
-                        daily_passage["book"],
-                        int(daily_passage["chapter"]),
-                        int(daily_passage["verse"])
-                    )
 
                     stc.html(
                         HTML_RANDOM_TEMPLATE.format(reference, mytext),
