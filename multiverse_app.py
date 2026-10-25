@@ -281,15 +281,3 @@ def run_multiverse():
         with st.expander("Word Frequency Plot"):
             plot_word_freq_with_altair(docx)
 
-
-  
-
-
-    st.markdown(
-    """
-    <div style="text-align: center; margin-top: 40px; padding: 15px;">
-        JBC@2026
-    </div>
-    """,
-    unsafe_allow_html=True,
-)

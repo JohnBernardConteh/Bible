@@ -153,13 +153,3 @@ def run_singleverse():
                         st.warning("No matching verses found.")
 
 
-
-
-    st.markdown(
-    """
-    <div style="text-align: center; margin-top: 40px; padding: 15px;">
-        JBC@2026
-    </div>
-    """,
-    unsafe_allow_html=True,
-)

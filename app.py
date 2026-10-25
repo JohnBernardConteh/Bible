@@ -55,5 +55,15 @@ def main():
         )
 
 
+    st.markdown(
+    """
+    <div style="text-align: center; margin-top: 40px; padding: 15px;">
+        JBC@2026
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 if __name__ == "__main__":
     main()
