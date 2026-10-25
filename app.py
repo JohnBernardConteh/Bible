@@ -43,9 +43,6 @@ def main():
 	- Read a Story of the Day.
 	- Explore word frequencies and word length distributions.
 	- Highlight named entities and parts of speech.
-
-	
-	Developed by **John Bernard Conteh**.
 	"""
         )
 
