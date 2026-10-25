@@ -257,17 +257,14 @@ def run_story():
             daily_random.randrange(len(stories))
         ]
 
-        with st.expander(
-            "Story of the Day",
-            expanded=True,
-        ):
-            st.caption(
-                today.strftime("%d %B %Y")
-            )
+        st.subheader("Story of the Day")
 
-            st.info(daily_story["title"])
+        st.caption(
+            today.strftime("%d %B %Y")
+        )
 
-            st.markdown(daily_story["text"])
+        # Show a preview with a Read Full Story expander.
+        display_story(daily_story)
 
     # Attribution
     st.caption(
