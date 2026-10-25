@@ -6,11 +6,12 @@ import streamlit.components.v1 as stc
 from utils import HTML_BANNER
 from single_verse_app import run_singleverse
 from multiverse_app import run_multiverse
+from story_app import run_story
 
 def main():
     # st.title("Bible App")
     stc.html(HTML_BANNER)
-    menu = ["SingleVerse", "MultipleVerse", "About"]
+    menu = ["SingleVerse", "MultipleVerse", "Story", "About"]
 
     choice = st.sidebar.selectbox("Menu", menu)
     if choice == "SingleVerse":
@@ -18,6 +19,9 @@ def main():
         
     elif choice == "MultipleVerse":
         run_multiverse()
+
+    elif choice == "Story":
+    	run_story()
 
     else:
         st.subheader("About the Bible Study App")
@@ -34,18 +38,11 @@ def main():
 	- Select multiple verses from a chapter.
 	- Search for words or phrases across the Bible.
 	- Read a randomly selected verse.
+	- Explore 50 simplified Bible stories.
+	- Search by title, name or phrase.
+	- Read a Story of the Day.
 	- Explore word frequencies and word length distributions.
 	- Highlight named entities and parts of speech.
-
-	### Purpose
-	This project combines Bible reading with text analysis
-	to support personal study and demonstrate Python,
-	Streamlit and natural language processing.
-
-	### About the analysis
-	Word searches find matching text rather than interpret topics.
-	Language analysis tools may misidentify biblical names and
-	older English expressions. Use the results as study aids.
 
 	
 	Developed by **John Bernard Conteh**.
